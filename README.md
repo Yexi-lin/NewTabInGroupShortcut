@@ -1,2 +1,61 @@
-# NewTabInGroupShortcut
-Quickly open new tabs in current group with custom keyboard shortcut
+# 群组新建标签页快捷键扩展
+
+这是一个Microsoft Edge浏览器扩展，允许用户使用自定义快捷键在当前标签页群组中打开新标签页。
+
+## 功能特点
+
+- 使用快捷键（默认为`Ctrl+Shift+G`）在当前标签页群组中打开新标签页
+- 如果当前标签页不在群组中，则创建一个普通的新标签页
+- 简洁的弹出窗口界面，提供使用说明
+
+## 安装方法
+
+### 开发模式安装
+
+1. 下载或克隆此仓库到本地
+2. 生成图标文件
+   - 打开`create_icons.html`文件
+   - 按照页面上的说明下载图标并放入`icons`文件夹
+3. 在Edge浏览器中打开`edge://extensions/`
+4. 开启右上角的"开发人员模式"
+5. 点击"加载解压缩的扩展"
+6. 选择此扩展的文件夹
+
+## 使用方法
+
+1. 将标签页添加到群组中
+   - 右键点击标签页
+   - 选择"添加到新组"或"添加到现有组"
+2. 在群组中的任意标签页上按下快捷键
+3. 新标签页将自动创建并添加到当前群组中
+
+## 自定义快捷键
+
+1. 在Edge浏览器中打开`edge://extensions/shortcuts`
+2. 找到"群组标签页快捷键"扩展
+3. 点击输入框并设置您想要的快捷键组合
+
+## 文件结构
+
+- `manifest.json` - 扩展的配置文件
+- `background.js` - 后台脚本，处理快捷键和标签页操作
+- `popup.html` - 弹出窗口的HTML文件
+- `popup.js` - 弹出窗口的JavaScript文件
+- `icons/` - 存放扩展图标的文件夹
+- `create_icons.html` - 用于生成图标的工具
+
+## 技术细节
+
+此扩展使用Manifest V3规范开发，使用了以下Chrome扩展API：
+
+- `chrome.commands` - 用于注册和处理快捷键
+- `chrome.tabs` - 用于创建和管理标签页
+- `chrome.tabGroups` - 用于管理标签页群组
+
+## 隐私说明
+
+此扩展不收集任何用户数据，也不需要任何特殊权限，除了访问标签页和标签页群组的权限。
+
+## 许可证
+
+MIT
