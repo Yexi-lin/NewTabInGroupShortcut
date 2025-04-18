@@ -1,61 +1,66 @@
-# 群组新建标签页快捷键扩展
+# New Tab in Group Shortcut Extension
 
-这是一个Microsoft Edge浏览器扩展，允许用户使用自定义快捷键在当前标签页群组中打开新标签页。
+<div align="right">
+  <a href="README.md">English</a> | 
+  <a href="README_zh.md">中文</a>
+</div>
 
-## 功能特点
+This is a Microsoft Edge browser extension that allows users to open a new tab within the current tab group using a custom keyboard shortcut.
 
-- 使用快捷键（默认为`Ctrl+Shift+G`）在当前标签页群组中打开新标签页
-- 如果当前标签页不在群组中，则创建一个普通的新标签页
-- 简洁的弹出窗口界面，提供使用说明
+## Features
 
-## 安装方法
+- Use a keyboard shortcut (default: `Ctrl+Shift+G`) to open a new tab in the current tab group
+- If the current tab is not in a group, a regular new tab will be created
+- Clean popup interface with usage instructions
 
-### 开发模式安装
+## Installation
 
-1. 下载或克隆此仓库到本地
-2. 生成图标文件
-   - 打开`create_icons.html`文件
-   - 按照页面上的说明下载图标并放入`icons`文件夹
-3. 在Edge浏览器中打开`edge://extensions/`
-4. 开启右上角的"开发人员模式"
-5. 点击"加载解压缩的扩展"
-6. 选择此扩展的文件夹
+### Developer Mode Installation
 
-## 使用方法
+1. Download or clone this repository to your local machine
+2. Generate icon files
+   - Open the `create_icons.html` file
+   - Follow the instructions on the page to download icons and place them in the `icons` folder
+3. Open `edge://extensions/` in your Edge browser
+4. Enable "Developer mode" in the top-right corner
+5. Click "Load unpacked"
+6. Select the folder containing this extension
 
-1. 将标签页添加到群组中
-   - 右键点击标签页
-   - 选择"添加到新组"或"添加到现有组"
-2. 在群组中的任意标签页上按下快捷键
-3. 新标签页将自动创建并添加到当前群组中
+## Usage
 
-## 自定义快捷键
+1. Add tabs to a group
+   - Right-click on a tab
+   - Select "Add to new group" or "Add to existing group"
+2. Press the shortcut key on any tab within the group
+3. A new tab will be automatically created and added to the current group
 
-1. 在Edge浏览器中打开`edge://extensions/shortcuts`
-2. 找到"群组标签页快捷键"扩展
-3. 点击输入框并设置您想要的快捷键组合
+## Customizing the Shortcut
 
-## 文件结构
+1. Open `edge://extensions/shortcuts` in your Edge browser
+2. Find the "New Tab in Group Shortcut" extension
+3. Click the input field and set your desired shortcut combination
 
-- `manifest.json` - 扩展的配置文件
-- `background.js` - 后台脚本，处理快捷键和标签页操作
-- `popup.html` - 弹出窗口的HTML文件
-- `popup.js` - 弹出窗口的JavaScript文件
-- `icons/` - 存放扩展图标的文件夹
-- `create_icons.html` - 用于生成图标的工具
+## File Structure
 
-## 技术细节
+- `manifest.json` - Configuration file for the extension
+- `background.js` - Background script that handles shortcuts and tab operations
+- `popup.html` - HTML file for the popup window
+- `popup.js` - JavaScript file for the popup window
+- `icons/` - Folder containing extension icons
+- `create_icons.html` - Tool for generating icons
 
-此扩展使用Manifest V3规范开发，使用了以下Chrome扩展API：
+## Technical Details
 
-- `chrome.commands` - 用于注册和处理快捷键
-- `chrome.tabs` - 用于创建和管理标签页
-- `chrome.tabGroups` - 用于管理标签页群组
+This extension is developed using the Manifest V3 specification and utilizes the following Chrome extension APIs:
 
-## 隐私说明
+- `chrome.commands` - For registering and handling shortcuts
+- `chrome.tabs` - For creating and managing tabs
+- `chrome.tabGroups` - For managing tab groups
 
-此扩展不收集任何用户数据，也不需要任何特殊权限，除了访问标签页和标签页群组的权限。
+## Privacy Statement
 
-## 许可证
+This extension does not collect any user data and does not require any special permissions beyond access to tabs and tab groups.
+
+## License
 
 MIT
