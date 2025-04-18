@@ -63,4 +63,4 @@ This extension does not collect any user data and does not require any special p
 
 ## License
 
-MIT
+GPL3.0
