@@ -1,0 +1,86 @@
+{
+  "extensionName": {
+    "message": "群组新标签页快捷键",
+    "description": "扩展名称"
+  },
+  "extensionDescription": {
+    "message": "使用快捷键在当前群组中快速打开新标签页",
+    "description": "扩展描述"
+  },
+  "shortcutLabel": {
+    "message": "当前快捷键为:",
+    "description": "快捷键标签"
+  },
+  "setupShortcut": {
+    "message": "立即设置快捷键",
+    "description": "设置快捷键按钮文本"
+  },
+  "versionText": {
+    "message": "版本 $VERSION$",
+    "description": "版本显示文本",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "firstUseTip": {
+    "message": "初次使用请在\nedge://extensions/shortcuts\n设置快捷键",
+    "description": "首次使用提示"
+  },
+  "shortcutRedirectNote": {
+    "message": "(将跳转到edge://extensions/shortcuts)",
+    "description": "快捷键设置跳转说明"
+  },
+  "usageTitle": {
+    "message": "使用说明：",
+    "description": "使用指南标题"
+  },
+  "usageStep1": {
+    "message": "将标签页添加到群组中（右键点击标签页 → 添加到新组）",
+    "description": "使用指南第一步"
+  },
+  "usageStep2": {
+    "message": "在群组中的任意标签页上按下快捷键",
+    "description": "使用指南第二步"
+  },
+  "usageStep3": {
+    "message": "新标签页将自动创建并添加到当前群组中",
+    "description": "使用指南第三步"
+  },
+  "usageNote": {
+    "message": "如果当前标签页不在群组中，将创建一个普通的新标签页",
+    "description": "非群组标签页行为说明"
+  },
+  "commandDescription": {
+    "message": "在当前标签页群组中打开新标签页",
+    "description": "键盘命令描述"
+  },
+  "shortcutButtonTitle": {
+    "message": "快捷键设置跳转",
+    "description": "设置快捷键按钮的title属性"
+  },
+  "shortcutSettingsTitle": {
+    "message": "快捷键设置",
+    "description": "options页面标题"
+  },
+  "redirectFailed": {
+    "message": "无法自动跳转",
+    "description": "自动跳转失败提示标题"
+  },
+  "manualRedirectNote": {
+    "message": "请手动在地址栏输入: $1$",
+    "description": "手动跳转说明",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "edge://extensions/shortcuts"
+      }
+    }
+  },
+  "attemptingRedirect": {
+    "message": "正在尝试跳转到快捷键设置页面...",
+    "description": "跳转中提示文本"
+  }
+}

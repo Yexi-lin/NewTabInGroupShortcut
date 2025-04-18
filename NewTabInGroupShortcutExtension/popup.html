@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>使用快捷键在群组中打开新标签页</title>
+  <style>
+    body {
+      font-family: 'Microsoft YaHei', sans-serif;
+      width: 300px;
+      padding: 15px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 18px;
+      color: #1a73e8;
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .shortcut {
+      background-color: #f0f7ff;
+      border: 1px solid #d0e3ff;
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin: 10px 0;
+      display: inline-block;
+      font-weight: bold;
+      color: #1a73e8;
+    }
+    .info {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 i18n="extensionName">使用快捷键在群组中打开新标签页</h1>
+    
+    <div>
+      <p i18n="extensionDescription">使用快捷键在当前标签页群组中打开新标签页：</p>
+      <ul>
+        <li style="white-space: pre-wrap;" i18n="firstUseTip">初次使用请在edge://extensions/shortcuts设置快捷键</li>
+        
+      </ul>
+      <p i18n="shortcutLabel">当前快捷键为:</p>
+      <div class="shortcut">空</div>
+      <button i18n="setupShortcut" id="setupShortcut" style="
+        background-color: #1a73e8;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+      " i18n-title="shortcutButtonTitle" i18n-aria-label="setupShortcut">立即设置快捷键</button>
+      <p style="font-size:12px;color:#888;margin-top:5px;" i18n="shortcutRedirectNote">(将跳转到edge://extensions/shortcuts)</p>
+    </div>
+    
+    <div class="info">
+      <p><strong i18n="usageTitle">使用说明：</strong></p>
+      <ol>
+        <li i18n="usageStep1">将标签页添加到群组中（右键点击标签页 → 添加到新组）</li>
+        <li i18n="usageStep2">在群组中的任意标签页上按下快捷键</li>
+        <li i18n="usageStep3">新标签页将自动创建并添加到当前群组中</li>
+      </ol>
+      <p i18n="usageNote">如果当前标签页不在群组中，将创建一个普通的新标签页。</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p i18n="versionText">版本 1.0</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

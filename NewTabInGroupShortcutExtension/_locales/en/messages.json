@@ -1,0 +1,86 @@
+{
+  "extensionName": {
+    "message": "New Tab In Group Shortcut",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Quickly open new tabs in current group with custom keyboard shortcut",
+    "description": "Description of the extension"
+  },
+  "shortcutLabel": {
+    "message": "Current Shortcut:",
+    "description": "Label for shortcut display"
+  },
+  "setupShortcut": {
+    "message": "Setup Shortcut",
+    "description": "Button text for shortcut setup"
+  },
+  "versionText": {
+    "message": "Version $VERSION$",
+    "description": "Version display text",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "firstUseTip": {
+    "message": "First time users: Please set shortcut at\nedge://extensions/shortcuts",
+    "description": "Tip for first time users"
+  },
+  "shortcutRedirectNote": {
+    "message": "(Will redirect to edge://extensions/shortcuts)",
+    "description": "Note about shortcut setup redirect"
+  },
+  "usageTitle": {
+    "message": "Usage Guide:",
+    "description": "Title for usage instructions"
+  },
+  "usageStep1": {
+    "message": "Add tabs to a group (Right click tab → Add to new group)",
+    "description": "First step in usage guide"
+  },
+  "usageStep2": {
+    "message": "Press shortcut on any tab in the group",
+    "description": "Second step in usage guide"
+  },
+  "usageStep3": {
+    "message": "New tab will be created and added to current group",
+    "description": "Third step in usage guide"
+  },
+  "usageNote": {
+    "message": "If current tab is not in a group, a regular new tab will be created",
+    "description": "Note about non-group tab behavior"
+  },
+  "commandDescription": {
+    "message": "Open new tab in current group",
+    "description": "Description for keyboard command"
+  },
+  "shortcutButtonTitle": {
+    "message": "Shortcut Setup Redirect",
+    "description": "Title attribute for shortcut setup button"
+  },
+  "shortcutSettingsTitle": {
+    "message": "Shortcut Settings",
+    "description": "Title for options page"
+  },
+  "redirectFailed": {
+    "message": "Auto Redirect Failed",
+    "description": "Title for redirect failure message"
+  },
+  "manualRedirectNote": {
+    "message": "Please manually enter in address bar: $1$",
+    "description": "Note about manual redirect",
+    "placeholders": {
+      "1": {
+        "content": "$1",
+        "example": "edge://extensions/shortcuts"
+      }
+    }
+  },
+  "attemptingRedirect": {
+    "message": "Attempting to redirect to shortcut settings...",
+    "description": "Message shown while attempting redirect"
+  }
+}
