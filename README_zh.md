@@ -4,6 +4,7 @@
   <a href="README.md">English</a> | 
   <a href="README_zh.md">中文</a>
 </div>
+该插件使用Claude3.7和DeepseekV3生成并修改。
 
 这是一个Microsoft Edge浏览器扩展，允许用户使用自定义快捷键在当前标签页群组中打开新标签页。
 
