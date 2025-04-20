@@ -5,6 +5,7 @@
   <a href="README_zh.md">中文</a>
 </div>
 
+Powered by Claude3.7 and DeepseekV3.
 This is a Microsoft Edge browser extension that allows users to open a new tab within the current tab group using a custom keyboard shortcut.
 
 ## Features
