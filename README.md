@@ -11,7 +11,7 @@ This is a Microsoft Edge browser extension that allows users to open a new tab w
 
 ## Features
 
-- Use a keyboard shortcut (default: `Ctrl+Shift+G`) to open a new tab in the current tab group
+- Use a keyboard shortcut (default empty) to open a new tab in the current tab group
 - If the current tab is not in a group, a regular new tab will be created
 - Clean popup interface with usage instructions
 
